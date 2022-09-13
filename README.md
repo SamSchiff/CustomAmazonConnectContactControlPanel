@@ -2,6 +2,8 @@
 
 ## Steps to run
 1. install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+1. run `git clone https://github.com/SamSchiff/CustomAmazonConnectContactControlPanel.git`
+1. run `cd CustomAmazonConnectContactControlPanel`
 1. run `npm install`
 1. In the index.html file, add in your Connect instance url on the line that says "UPDATE URL HERE". Leave out the trailing "/"
 1. Go to your Connect instance page in the AWS console. Find the "Approved Origins" page. Add in "http://localhost:4000" and "https://localhost:4000". This will allow the Connect instance to be iframed by this application.
