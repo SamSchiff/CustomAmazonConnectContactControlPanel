@@ -12,7 +12,7 @@
         var containerDiv = document.getElementById("container-div");
         var contacts = [];
         function init() {
-          const connectUrl = "https://localhost:3000/connect-gamma";
+          const connectUrl = ""; // UPDATE URL HERE
           connect.core.initCCP(
               containerDiv, 
               {
@@ -21,22 +21,12 @@
                 softphone: {
                   allowFramedSoftphone: true
                 },
-                pageOptions: { //optional
+                pageOptions: { 
                   enableAudioDeviceSettings: true, //optional, defaults to 'false'
                   enablePhoneTypeSettings: true //optional, defaults to 'true' 
                 },
-                
               }
           );
-
-          connect.contact(function(c) {
-            contacts = [];
-            contacts.push(c);
-          })
-        }
-        function printContacts() {
-          console.log(contacts.length);
-          console.log(contacts);
         }
       </script>
   </body>
