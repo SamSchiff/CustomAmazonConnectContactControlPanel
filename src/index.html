@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="connect-streams-min-2.0.0.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/amazon-connect-streams@2.3.1/release/connect-streams.js"></script>
   </head>
   <body onLoad="init()">
     <main>
@@ -10,7 +10,6 @@
     </main>
       <script type="text/javascript">
         var containerDiv = document.getElementById("container-div");
-        var contacts = [];
         function init() {
           const connectUrl = ""; // UPDATE URL HERE. Should end in ".com" and have no trailing slash
           connect.core.initCCP(
